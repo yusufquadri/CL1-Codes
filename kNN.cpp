@@ -162,8 +162,10 @@ if((shortCount > averageCount) && (shortCount > tallCount))
   cout<<endl<<"The point ("<<x<<","<<y<<") belongs to the class -> Short"<<endl<<endl;
 else if((averageCount > shortCount) && (averageCount > tallCount))
   cout<<endl<<"The point ("<<x<<","<<y<<") belongs to the class -> Average"<<endl<<endl;
-else
+else if((tallCount > shortCount) && ( tallCount > averageCount))
   cout<<endl<<"The point ("<<x<<","<<y<<") belongs to the class -> Tall"<<endl<<endl;
+else 
+  cout<<endl<<"please enter different value for neighbours knn as two parameters have similar count ";
 
   return 0;
 }
